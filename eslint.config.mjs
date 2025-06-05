@@ -16,10 +16,10 @@ export default defineConfig([
         files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
         languageOptions: { globals: globals.node },
     },
+    tseslint.configs.recommended,
     {
         rules: {
             'no-console': 'error',
         },
     },
-    tseslint.configs.recommended,
 ]);
